@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mohit Sonale - Personal Portfolio Website. Frontend Developer and AI Enthusiast.">
+    <title>Mohit Sonale | Frontend Developer</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://img.icons8.com/color/48/000000/portfolio.png">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    
+
+    <nav id="navbar">
+        <div class="container">
+            <a href="#" class="logo"><i class="fa-solid fa-code"></i></a>
+            <ul id="nav-menu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-extra">
+                <div class="nav-icons" onclick="toggleMenu()">
+                    <i class="fa-solid fa-bars-staggered" id="menu-icon"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="header">
+        <div class="container">
+            <div class="hero-content">
+                <span class="reveal">Welcome to my universe</span>
+                <h1 class="reveal">Hi, I'm <span>Mohit Sonale</span><br>Modern Web Developer</h1>
+                <p class="reveal">I craft stunning, high-performance digital experiences with a focus on clean code and
+                    exceptional user interfaces. Professionalizing in MERN stack and AI integration.</p>
+                <div class="btn-group reveal">
+                    <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Let's Talk</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title reveal">About Me</h2>
+            <div class="about-grid">
+                <div class="about-img reveal">
+                    <!-- Using current photo or placeholder if missing -->
+                    <img src="images/photo2.png" alt="Mohit Sonale"
+                        onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800'">
+                </div>
+                <div class="about-info reveal">
+                    <p>Hi, I'm Mohit Sonale, a 20-year-old Frontend focused MERN stack developer with strong proficiency
+                        in React and REST APIs. I am seeking an internship to build responsive, scalable web
+                        applications and contribute to real-world products while continuously improving my development
+                        skills.</p>
+
+                    <div class="tabs">
+                        <button class="tab-btn active" onclick="showTab('skills')">Skills</button>
+                        <button class="tab-btn" onclick="showTab('education')">Education</button>
+                        <button class="tab-btn" onclick="showTab('experience')">Experience</button>
+                    </div>
+
+                    <div id="skills" class="tab-content active">
+                        <div class="skills-list">
+                            <div class="skill-card"><i class="fa-brands fa-html5"></i>
+                                <p>HTML5</p>
+                            </div>
+                            <div class="skill-card"><i class="fa-brands fa-css3-alt"></i>
+                                <p>CSS3</p>
+                            </div>
+                            <div class="skill-card"><i class="fa-brands fa-js"></i>
+                                <p>JavaScript</p>
+                            </div>
+                            <div class="skill-card"><i class="fa-brands fa-react"></i>
+                                <p>React</p>
+                            </div>
+                            <div class="skill-card"><i class="fa-solid fa-code"></i>
+                                <p>Tailwind</p>
+                            </div>
+                            <div class="skill-card"><i class="fa-solid fa-database"></i>
+                                <p>MERN</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="education" class="tab-content">
+                        <div class="info-item">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <div>
+                                <h4>Bachelor of Engineering</h4>
+                                <p>PDEA College of Engineering, Pune (2023 - 2027)</p>
+                                <p>CGPA: 9.0+ (Pursuing)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="experience" class="tab-content">
+                        <div class="info-item">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <div>
+                                <h4>Learning & Building</h4>
+                                <p>6+ months of intensive front-end focus.</p>
+                                <p>Built 10+ projects using modern stacks.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn-group" style="margin-top: 2rem;">
+                        <a href="https://drive.google.com/file/d/1f7GL5OCa6raukEO6K_hwvvWxejPukN-_/view?usp=drivesdk" class="btn btn-primary" download>Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="container">
+            <h2 class="section-title reveal">Featured Projects</h2>
+            <div class="portfolio-grid">
+
+                <!-- Project 1 -->
+                <div class="work-card reveal">
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800"
+                        alt="AI Image Generator">
+                    <div class="work-overlay">
+                        <h3>AI Image Generator</h3>
+                        <p>A full-stack MERN application that leverages AI to generate stunning images from text
+                            prompts. Features a sleek dashboard and cloud storage.</p>
+                        <div class="work-links">
+                            <a href="https://github.com/mohitsonale/AI-IMAGE-GENERATOR" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a>
+                            <a href="https://ai-image-generate-frontend.onrender.com/" class="preview-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="work-card reveal">
+                    <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&q=80&w=800"
+                        alt="MERN Auth System">
+                    <div class="work-overlay">
+                        <h3>MERN Auth System</h3>
+                        <p>An advanced authentication system implemented using the MERN stack. Includes JWT,
+                            cookie-based sessions, and secure password hashing.</p>
+                        <div class="work-links">
+                            <a href="https://github.com/mohitsonale/mern-auth" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a>
+                            <a href="#" class="preview-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="work-card reveal">
+                    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=800"
+                        alt="OWN AI TOOL">
+                    <div class="work-overlay">
+                        <h3>Custom AI Assistant</h3>
+                        <p>An intelligent productivity tool powered by modern LLMs. Helps users with writing, coding,
+                            and brainstorming through a refined chat interface.</p>
+                        <div class="work-links">
+                            <a href="https://github.com/mohitsonale/OWN-AI-TOOL" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a>
+                            <a href="https://own-ai-tool-mohitsonale.vercel.app/" class="preview-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title reveal">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <h2>Let's build something <br><span>amazing together.</span></h2>
+                    <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of your
+                        visions.</p>
+
+                    <div class="info-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <p>Email me at</p>
+                            <h4>mohisonale@gmail.com</h4>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <p>Call or WhatsApp</p>
+                            <h4>+91 9860183511</h4>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/mohitsonale" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/mohit-sonale-113aaa321" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://x.com/MohitSonal_18" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=9ljgnsy"
+                            target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form reveal">
+                    <form id="portfolio-contact">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" id="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" id="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Your Message</label>
+                            <textarea id="message" rows="5" placeholder="I'd like to talk about..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Mohit Sonale. Built with passion and code.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
