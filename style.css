@@ -645,6 +645,9 @@ footer p {
         margin: 0;
       
     }
+    #navbar{
+        position:sticky;
+    }
 
     #nav-menu.active {
         right: 0;

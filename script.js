@@ -68,15 +68,7 @@ function showTab(tabId) {
   event.currentTarget.classList.add('active');
 }
 
-// Navbar Scroll Effect
-window.addEventListener('scroll', () => {
-  const nav = document.getElementById('navbar');
-  if (window.scrollY > 50) {
-    nav.classList.add('scrolled');
-  } else {
-    nav.classList.remove('scrolled');
-  }
-});
+
 
 // Form Submission (WhatsApp Integration)
  document.getElementById("portfolio-contact").addEventListener("submit", function(event) {
