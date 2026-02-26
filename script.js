@@ -1,6 +1,6 @@
 
 
-// Page Loader
+
 window.addEventListener("load", () => {
   const loader = document.getElementById("loader");
   setTimeout(() => {
@@ -11,7 +11,6 @@ window.addEventListener("load", () => {
 
 
 
-// Menu Toggle
 function toggleMenu() {
   const nav = document.getElementById('nav-menu');
   const icon = document.getElementById('menu-icon');
@@ -26,7 +25,7 @@ function toggleMenu() {
   }
 }
 
-// Close menu on link click
+
 document.querySelectorAll('#nav-menu a').forEach(link => {
   link.addEventListener('click', () => {
     const nav = document.getElementById('nav-menu');
@@ -37,14 +36,15 @@ document.querySelectorAll('#nav-menu a').forEach(link => {
   });
 });
 
-// Scroll Reveal Animation
+
 const revealElements = document.querySelectorAll('.reveal');
 
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('active');
-      // Once revealed, we can stop observing
+  
+      
       revealObserver.unobserve(entry.target);
     }
   });
@@ -56,7 +56,7 @@ revealElements.forEach(el => {
   revealObserver.observe(el);
 });
 
-// Tab Switching
+
 function showTab(tabId) {
   const contents = document.querySelectorAll('.tab-content');
   const buttons = document.querySelectorAll('.tab-btn');
@@ -70,7 +70,7 @@ function showTab(tabId) {
 
 
 
-// Form Submission (WhatsApp Integration)
+
  document.getElementById("portfolio-contact").addEventListener("submit", function(event) {
       event.preventDefault();
 
@@ -78,18 +78,17 @@ function showTab(tabId) {
       let email = document.getElementById("email").value;
       let message = document.getElementById("message").value;
 
-      // Your WhatsApp number with country code (without + or spaces)
+      
       let whatsappNumber = "919860183511";
 
-      let whatsappURL = `https://wa.me/${9860183511}?text=` 
-          + encodeURIComponent(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
+      let whatsappURL = `https://wa.me/${9860183511}?text=` + encodeURIComponent(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
 
       window.open(whatsappURL, "_blank");
   }); 
 
-// Add reveal classes to specific elements dynamically if not in HTML
+
 document.addEventListener('DOMContentLoaded', () => {
-  // Reveal class for CSS animations
+
   const style = document.createElement('style');
   style.textContent = `
         .reveal {
